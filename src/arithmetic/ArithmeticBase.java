@@ -6,6 +6,7 @@
 package arithmetic;
 
 import java.util.Scanner;
+import java.util.Random;
 
 /** This class takes String input plus,minus,divide and times
  * from user and execute the operation
@@ -16,11 +17,19 @@ import java.util.Scanner;
 public class ArithmeticBase 
 {
  public double x,y;
+ public enum Value {Plus, Minus, Times, Divide};
+      
     double calculate(double x, double y) 
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("enter String");
         String s= sc.next();
+           /*Random rnd = new Random();
+            double s;
+             
+        s = rnd.nextDouble();*/
+        
+        
         switch (s.toUpperCase()) 
         {
             case "PLUS":
